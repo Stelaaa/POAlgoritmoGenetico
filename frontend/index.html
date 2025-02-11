@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Pães de Queijo</title>
+
+    <!-- 🔹 Tailwind CSS (Carregado corretamente) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-10">
+        <h1 class="text-2xl font-bold text-center mb-4">Distribuição de Pães de Queijo</h1>
+
+        <div class="mb-4">
+            <h2 class="text-lg font-semibold">Dimensões da Forma</h2>
+            <label class="block">Largura da Forma (cm):</label>
+            <input type="number" id="width" class="w-full p-2 border rounded">
+            
+            <label class="block mt-2">Altura da Forma (cm):</label>
+            <input type="number" id="height" class="w-full p-2 border rounded">
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-lg font-semibold">Dados dos Pães de Queijo</h2>
+            <label class="block">Quantidade de Pães de Queijo:</label>
+            <input type="number" id="num-paos" class="w-full p-2 border rounded">
+
+            <label class="block mt-2">Largura do Pão de Queijo (cm):</label>
+            <input type="number" id="pao-width" class="w-full p-2 border rounded">
+            
+            <label class="block mt-2">Altura do Pão de Queijo (cm):</label>
+            <input type="number" id="pao-height" class="w-full p-2 border rounded">
+        </div>
+
+        <!-- 🔹 Botão atualizado (desativa durante o cálculo) -->
+        <button id="solve-button" onclick="solvePacking()" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition">Calcular Distribuição</button>
+
+        <div class="mt-4 p-4 bg-gray-200 rounded">
+            <h2 class="text-lg font-semibold">Resultado</h2>
+            <p id="result-text">Nenhum cálculo realizado ainda.</p>
+        </div>
+    </div>
+
+    <!-- 🔹 Importando o script corretamente -->
+    <script src="script.js"></script>
+</body>
+</html>

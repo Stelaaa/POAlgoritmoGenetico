@@ -1,0 +1,86 @@
+/* 🔹 Estilização básica do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Container centralizado */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 🔹 Títulos */
+h1, h2 {
+    color: #333;
+}
+
+/* 🔹 Seções */
+.input-section, .parameters-section, .results-section {
+    margin-bottom: 20px;
+}
+
+/* 🔹 Estilização dos labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 🔹 Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* 🔹 Botão principal */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 🔹 Efeito ao passar o mouse */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Botão de carregamento */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* 🔹 Resultado */
+#result-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
